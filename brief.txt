@@ -1,0 +1,10 @@
+Project: "Access Studio" - independent demo inspired by the problem space of Floracene (YC S26), a platform for healthcare teams to build and deploy internal tools with controlled data access. NOT affiliated; footer says so.
+
+Concept: an interactive demo of role-controlled internal tooling for a fictional clinic:
+- One small internal tool: a patient callback list for a fictional clinic with 100% SYNTHETIC patients (obviously fake names like "Test Patient A" or clearly fictional, zero real PHI).
+- Role switcher (Front desk / Nurse / Practice admin). Field-level access rules apply live: front desk sees names + callback reason only; nurse sees clinical note fields; admin sees everything plus an audit trail panel. Masked fields render as "Restricted for this role" - never hidden without explanation.
+- An audit log panel: every role switch and every record view appends a synthetic audit entry, showing what controlled access means operationally.
+- A mini "tool config" view: checkboxes toggle which fields exist in the tool, demonstrating build-and-deploy-internal-tools feel.
+Honesty bar: header badge "Synthetic data - demo"; copy states all patients/records are synthetic, access rules are a simplified illustration, not HIPAA compliance advice; footer: "Independent demo built by Vinil Polepalli. Not affiliated with or endorsed by Floracene."
+UI: dark sleek, distinct accent VIOLET (not indigo/emerald/amber/sky/rose/lime).
+Tech: Next.js static export (output:'export'), npm run build must pass, no runtime external calls. Write SPEC.md first, then implement in slices. No git commit, no deploy.
